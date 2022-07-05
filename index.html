@@ -1,1 +1,118 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOAN ANH</title>
+  <link rel="stylesheet" href="./process/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="document-contaiter">
+    <span style="font-size: 10px">vr1:06-15-2022</span>
+    <div class="document">
+      <div class="document-block info">
+        <div class="document-block-detail cus-name-block">
+          <label class="" for="customerName">Tên KH</label>
+          <input type="text" id="cusName">
+          <span class="aboveErr" id="cusNameErr">Vui lòng nhập số</span>
+        </div>
+        <div class="document-block-detail">
+          <label class="" for="phone">Số điện thoại</label>
+          <input type="text" id="phone">
+          <span class="aboveErr" id="phoneErr">Vui lòng nhập số</span>
+        </div>
+        <div class="document-block-detail address-block">
+          <label class="address-label" for="address">Địa chỉ</label>
+          <input type="text" id="address">
+          <span class="aboveErr" id="addressErr">Vui lòng nhập số</span>
+        </div>
+      </div>
+      
+      <div class="document-block product">
+        <div class="document-block-detail">
+          <label class="product-label" for="product-select">Tên sản phẩm</label>
+          <select name="product" id="product-select">
+            <!-- options placeholder -->
+          </select>
+          <span class="err" id="selectErr">Bạn chưa chọn sản phẩm</span>
+        </div>
+        <div class="document-block-detail">
+          <label class="align-right" for="weight">Số ký đã bán (kg)</label>
+          <input type="text" id="weight">
+          <span class="err" id="weightErr">Vui lòng nhập số</span>
+        </div>
+        <div class="document-block-detail paid">
+          <label class="align-right" for="paid">Doanh thu</label>
+          <input class="paid-input" type="text" id="paid">
+          <span class="err" id="paidErr">Vui lòng nhập số</span>
+        </div>
+        <div class="document-block-detail-store">
+          <div class="store-label">Kho</div>
+          <div class="store-value" id="store-id">
+            <div class="store-block">
+              <input type="radio" name="store" checked="true" value="SG">
+              <label class="store-input" for="sg">SG</label>
+            </div>
+            <div class="store-block">
+              <input type="radio" name="store" value="HN">
+              <label for="hn">HN</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="add-button" id="add">Thêm</button>
+        </div>
+        <div>
+          <button class="save-button" id="save">Lưu vào bộ nhớ</button>
+        </div>
+      </div>
+      
+    </div>
+    <div class="result">
+      <table>
+        <thead class="result-header-row">
+          <th class="result-stt">STT</th>
+          <th>Tên KH</th>
+          <th>Số điện thoại</th>
+          <th>Địa chỉ</th>
+          <th class="result-product">Tên sản phẩm</th>
+          <th class="result-weight">Số ký đã bán</th>
+          <th class="result-store">Kho</th>
+          <th class="result-money align-right">Doanh số</th>
+          <th class="result-money align-right">Doanh thu</th>
+          <th class="result-money align-right">Công nợ</th>
+          <th class="result-money align-right">Hoa hồng</th>
+          <th class="result-del"></th>
+        </thead>
+        <tbody id="result-id">
+          <tr class="result-row-fixed">
+            <td class="result-stt"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="result-money align-right money"><h3>0 đ</h3></td>
+            <td class="result-money align-right money"><h3>0 đ</h3></td>
+            <td class="result-money align-right money"><h3>0 đ</h3></td>
+            <td class="result-money align-right money"><h3>0 đ</h3></td>
+            <td class="result-del"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <script src="./process/script.js"></script>
+</body>
+
+</html>
