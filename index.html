@@ -20,20 +20,26 @@
         <div class="document-block-detail cus-name-block">
           <label class="" for="customerName">Tên KH</label>
           <input type="text" id="cusName">
-          <span class="aboveErr" id="cusNameErr">Vui lòng nhập số</span>
+          <span class="aboveErr" id="cusNameErr"></span>
         </div>
         <div class="document-block-detail">
           <label class="" for="phone">Số điện thoại</label>
           <input type="text" id="phone">
-          <span class="aboveErr" id="phoneErr">Vui lòng nhập số</span>
+          <span class="aboveErr" id="phoneErr"></span>
         </div>
         <div class="document-block-detail address-block">
-          <label class="address-label" for="address">Địa chỉ</label>
+          <label class="address-label" for="address">
+            Địa chỉ
+            <span class="mic" id="mic">
+              <i class="fa-solid fa-microphone"></i>
+            </span>
+          </label>
           <input type="text" id="address">
-          <span class="aboveErr" id="addressErr">Vui lòng nhập số</span>
+
+          <span class="aboveErr" id="addressErr"></span>
         </div>
       </div>
-      
+
       <div class="document-block product">
         <div class="document-block-detail">
           <label class="product-label" for="product-select">Tên sản phẩm</label>
@@ -45,12 +51,12 @@
         <div class="document-block-detail">
           <label class="align-right" for="weight">Số ký đã bán (kg)</label>
           <input type="text" id="weight">
-          <span class="err" id="weightErr">Vui lòng nhập số</span>
+          <span class="err" id="weightErr"></span>
         </div>
         <div class="document-block-detail paid">
           <label class="align-right" for="paid">Doanh thu</label>
           <input class="paid-input" type="text" id="paid">
-          <span class="err" id="paidErr">Vui lòng nhập số</span>
+          <span class="err" id="paidErr"></span>
         </div>
         <div class="document-block-detail-store">
           <div class="store-label">Kho</div>
@@ -69,18 +75,18 @@
           <button class="add-button" id="add">Thêm</button>
         </div>
         <div>
-          <button class="save-button" id="save">Lưu vào bộ nhớ</button>
+          <button class="save-button" id="save">Đã lưu</button>
         </div>
       </div>
-      
+
     </div>
     <div class="result">
       <table>
         <thead class="result-header-row">
           <th class="result-stt">STT</th>
-          <th>Tên KH</th>
-          <th>Số điện thoại</th>
-          <th>Địa chỉ</th>
+          <th class="result-cusName">Tên KH</th>
+          <th class="result-phone align-right">Số điện thoại</th>
+          <th class="result-address">Địa chỉ</th>
           <th class="result-product">Tên sản phẩm</th>
           <th class="result-weight">Số ký đã bán</th>
           <th class="result-store">Kho</th>
@@ -99,10 +105,18 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="result-money align-right money"><h3>0 đ</h3></td>
-            <td class="result-money align-right money"><h3>0 đ</h3></td>
-            <td class="result-money align-right money"><h3>0 đ</h3></td>
-            <td class="result-money align-right money"><h3>0 đ</h3></td>
+            <td class="result-money align-right money">
+              <h3>0 đ</h3>
+            </td>
+            <td class="result-money align-right money">
+              <h3>0 đ</h3>
+            </td>
+            <td class="result-money align-right money">
+              <h3>0 đ</h3>
+            </td>
+            <td class="result-money align-right money">
+              <h3>0 đ</h3>
+            </td>
             <td class="result-del"></td>
           </tr>
         </tbody>
