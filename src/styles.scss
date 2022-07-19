@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --lightgreen: #82e94269;
+  --logogreen: rgb(9, 150, 63);
+  --logoorange: rgb(244, 115, 33);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
